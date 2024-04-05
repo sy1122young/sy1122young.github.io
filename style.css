@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: white;
+    background: #003329;
     min-height: 100vh;
     overflow-x:hidden;
 }
@@ -54,6 +54,7 @@ a:hover {
     justify-content: center;
     align-items:center;
     height: 100vh;
+    background-color:white;
 }
 #text{
     position: fixed;
