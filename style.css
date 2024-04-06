@@ -6,10 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body, html {
+  overflow-x: hidden;
+  }
 body{
     background: #003329;
     min-height: 100vh;
-    overflow-x:hidden;
+    
 }
 
 header{
