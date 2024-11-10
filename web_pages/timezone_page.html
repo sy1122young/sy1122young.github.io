@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Tracker</title>
+</head>
+<style>
+    .main_container {
+        display: flex;
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        height: 100vh; /* Full viewport height */
+        gap: 4vh; /* Space between image_container and summary */
+    }
+    
+    .image_container {
+        width: 45vh; /* Sets a width for the image container */
+        max-height: 50vh; /* Limits the height of the image container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hides images outside the container */
+    }
+
+    .image_container img {
+        width: 100%; /* Ensures images take full width of container */
+        max-height: 50vh;
+        object-fit: contain; /* Maintains aspect ratio */
+        display: none; /* Hides images by default for the slideshow */
+    }
+
+    /* Show the active slide */
+    .image_container img.active {
+        display: block;
+    }
+
+    .summary {
+        max-width: 30vh; /* Limits the width of the summary */
+        text-align: center; /* Centers text within the summary */
+        background-color: rgba(255, 255, 255, 0.4); /* White background with 0.4 opacity */
+        border-radius: 10px; /* Rounded corners */
+        padding: 1em; 
+    }
+    body{
+        background: #003329;
+        min-height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="main_container">
+        <div class="summary">
+            <h3>Flask Time Zone Web app</h3>
+            <h4>Description</h4>
+            <p>This web project utilized the time zone API to display the desired time zone to the user. This was done as a final project for Harvads CS50 course. This web app allows a user to login store there login in cookies and save desired time zones. All users are stored in an SQL data base.This was one of my First Flask applications.</p>
+            <h4> Technologies Used</h4>
+            <ul>
+                <li>SQL</li>
+                <li>Jinja</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Boot Strap library</li>
+            </ul>
+            <h4>Fetures</h4>
+            <ul>
+                <li>uses cookies</li>
+                <li>Sign in capability</li>
+                <li>Constructed SQL databases</li>
+            </ul>
+            <a href="https://github.com/sy1122young/timeZoneWebApplication"><h3>View code on GitHub</h3></a>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active"); // Hide all slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].classList.add("active"); // Show the current slide
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet</title>
+</head>
+<style>
+    .main_container {
+        display: flex;
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        height: 100vh; /* Full viewport height */
+        gap: 4vh; /* Space between image_container and summary */
+    }
+    
+    .image_container {
+        width: 45vh; /* Sets a width for the image container */
+        max-height: 50vh; /* Limits the height of the image container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hides images outside the container */
+    }
+
+    .image_container img {
+        width: 100%; /* Ensures images take full width of container */
+        max-height: 50vh;
+        object-fit: contain; /* Maintains aspect ratio */
+        display: none; /* Hides images by default for the slideshow */
+    }
+
+    /* Show the active slide */
+    .image_container img.active {
+        display: block;
+    }
+
+    .summary {
+        max-width: 30vh; /* Limits the width of the summary */
+        text-align: center; /* Centers text within the summary */
+        background-color: rgba(255, 255, 255, 0.4); /* White background with 0.4 opacity */
+        border-radius: 10px; /* Rounded corners */
+        padding: 1em; 
+    }
+    body{
+        background: #003329;
+        min-height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="main_container">
+        <div class="image_container">
+            <img class="mySlides active" src="../intranet_images/cardview.png" alt="Card View">
+            <img class="mySlides" src="../intranet_images/editview.png" alt="Edit View">
+            <img class="mySlides" src="../intranet_images/loginedin.png" alt="Logged In View">
+            <img class="mySlides" src="../intranet_images/swapable.gif" alt="Swappable View">
+        </div>
+        <div class="summary">
+            <h3>Flask Intranet Web App</h3>
+            <h4>Description</h4>
+            <p>This web project was done for Hamilton Radiology last year, This intranet was designed for staff to see newsletters and get contact details of other stuff members. I was the solo full-stack developer on this project. I had regular meetings to ensure the intranet met the web site specifications as well as stream line the process for existing staff who where struggling with the old intranet. This intranet was heavily focused on being as user-friendly as possible.</p>
+            <h4> Technologies Used</h4>
+            <ul>
+                <li>SQL</li>
+                <li>Jinja</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Boot Strap library</li>
+            </ul>
+            <h4>Fetures</h4>
+            <ul>
+                <li>Image uploading</li>
+                <li>Asynchronous requests for hot reloading and passing variables to the backend</li>
+                <li>Sorting Contacts</li>
+                <li>Rich text editor</li>
+                <li>Sign in capability</li>
+                <li>Constructed SQL databases</li>
+            </ul>
+            <a href="https://github.com/sy1122young/intrenet"><h3>View code on GitHub</h3></a>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active"); // Hide all slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].classList.add("active"); // Show the current slide
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

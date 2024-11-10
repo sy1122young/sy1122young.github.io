@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body, html {
+  overflow-x: hidden;
+  }
+body{
+    background: #003329;
+    min-height: 100vh;
+    
+}
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index:100;
+}
+
+.logo{
+    font-size: 2em;
+    color: #359381;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:#359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color:#359381;
+    color:white;
+}
+a:hover {
+  background-color:#359381;
+    color:white;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-color:white;
+}
+#text{
+    position: fixed;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.parallax img{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    min-height: 100vh;
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+.qulifications{
+    height: 50vh;
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+.texth2{
+    
+    color: #fff; 
+}
+p {
+    font-size: 1em;
+    color:#fff;
+    font-weight:300;  
+}
+
+div.element{
+    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 25px;
+    padding: 15px;
+    margin:20px;
+}
+.texth3{
+    color:white;
+}
+
+.hold{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.elementproject{
+    display:flex;
+
+}
+/* slider */
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+
+
+
+/* custom styles */
+.list-container{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.item-holder{
+  margin: 10px;
+  min-width: 250px;
+}
+
+.myButton{
+  background-color: #359381;
+  color: #f1f1f1;
+  
+}
+
+
+
+
+
+/* this is end */
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
