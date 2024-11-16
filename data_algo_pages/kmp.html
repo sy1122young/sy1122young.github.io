@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map/cam app</title>
+</head>
+<style>
+    .main_container {
+        display: flex;
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        height: 100vh; /* Full viewport height */
+        gap: 4vh; /* Space between image_container and summary */
+    }
+    
+    .image_container {
+        width: 45vh; /* Sets a width for the image container */
+        max-height: 50vh; /* Limits the height of the image container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hides images outside the container */
+    }
+
+    .image_container img {
+        width: 100%; /* Ensures images take full width of container */
+        max-height: 50vh;
+        object-fit: contain; /* Maintains aspect ratio */
+        display: none; /* Hides images by default for the slideshow */
+    }
+
+    /* Show the active slide */
+    .image_container img.active {
+        display: block;
+    }
+
+    .summary {
+        max-width: 30vh; /* Limits the width of the summary */
+        text-align: center; /* Centers text within the summary */
+        background-color: rgba(255, 255, 255, 0.4); /* White background with 0.4 opacity */
+        border-radius: 10px; /* Rounded corners */
+        padding: 1em; 
+    }
+    body{
+        background: #003329;
+        min-height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="main_container">
+        <div class="summary">
+            <h3>KMP data compression</h3>
+            <h4>Description</h4>
+            <p>The KMP (Knuth-Morris-Pratt) Data Compression Algorithm is a novel approach to data compression, leveraging the principles of pattern matching and efficient string searching. Inspired by the KMP algorithm's ability to detect repeating patterns without redundant computations, this compression technique optimally identifies and encodes repetitive sequences in data, reducing storage requirements while maintaining data integrity. This algorithm is particularly effective for datasets with recurring substrings, offering a blend of speed and high compression ratios.</p>
+            <h4> Technologies Used</h4>
+            <ul>
+                <li>Java</li>
+            </ul>
+            <a href="https://github.com/sy1122young/KMPDataCompression"><h3>View code on GitHub</h3></a>
+        </div>
+    </div>
+</body>
+
+</body>
+</html>
