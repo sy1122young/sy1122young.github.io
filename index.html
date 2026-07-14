@@ -1,122 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Stephen Young's software development and mechatronics engineering portfolio."
+  >
+
+  <title>Stephen Young | Developer Portfolio</title>
+
+  <!-- Main stylesheet -->
+  <link
+    rel="stylesheet"
+    href="portfolio.css"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- Devicon -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
 </head>
+
 <body>
-    <header class="logo">
-        <nav class="navigation">
-            <a href="index.html" class="active">Existing Projects</a>
-            <a href="summary.html">Skills and Qualifications</a>
-        </nav>
-    </header>
-    <section class="parallax">
-        <img src="hill1.png" id="hill1">
-        <img src="hill2.png" id="hill2">
-        <img src="hill3.png" id="hill3">
-        <img src="hill4.png" id="hill4">
-        <img src="hill5.png" id="hill5">
-        <img src="tree.png" id="tree">
-        <h2 id="text">Welcome to Stephens Portfolio</h2>
-        <img src="leaf.png" id="leaf">
-        <img src="plant.png" id="plant">
+
+  <main class="portfolio-page">
+
+    <!-- Hero -->
+    <section class="hero-section">
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+
+          <p class="intro-label">Hello, I am</p>
+
+          <h1>
+            Stephen
+            <span>Young</span>
+          </h1>
+
+          <h2>
+            Software Developer &amp; Mechatronics Engineering Student
+          </h2>
+
+          <p class="hero-description">
+            I hold a Bachelor’s degree in Computer Science and am currently
+            completing my second year of Mechatronics Engineering at the
+            University of Technology Sydney.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projects" class="primary-button">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              View My Projects
+            </a>
+
+            <a
+              href="mailto:stephen1122young@hotmail.com"
+              class="secondary-button"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              Contact Me
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="profile-area">
+
+          <div class="profile-glow"></div>
+
+          <div class="profile-frame">
+            <img
+              src="images/profilepicture.png"
+              alt="Stephen Young"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
-    <section class="sec">
-        
-        <ul class="cards">
-          <li>
-            <div class="card">
-              <img src="webTech.png" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                     
-                  <div class="card__header-text">
-                    <h3 class="card__title">Web Development</h3>                               
-                  </div>
-                </div>
-                <div class="card__description">
-                  <!-- <p >Existing Projects</p> -->
-                <ul>
-                  <li><a href="web_pages/intranet.html" target="_blank">Flask Intranet - work project for company</a></li>
-                  <li><a href="web_pages/music_page.html" target="_blank">Music library - PHP</a></li>
-                  <li><a href="web_pages/timezone_page.html" target="_blank">Flask Time Zone Tracker</a></li>
-                </ul>
-                </div>
-              </div>
-            </div>      
-          </li>
-          <li>
-            <div class="card">
-              <img src="appdev.png" class="card__image" alt="" />
-              <div class="card__overlay">        
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                  
-                  <div class="card__header-text">
-                    <h3 class="card__title">App Development</h3>              
-                  </div>
-                </div>
-                <div class="card__description">
-                <ul>
-                  <li><a href="App_pages/maps_page.html">weather and cams app - Java</a></li>
-                  <li><a href="App_pages/flutter_page.html">Daily faces - Flutter</a></li>
-                </ul>
-                </div>
-              </div>
+
+
+    <!-- About -->
+    <section class="section about-section">
+
+      <div class="about-introduction">
+
+        <p class="section-label">About</p>
+
+        <h2>About Me</h2>
+
+        <p>
+          I am a Computer Science graduate and Mechatronics Engineering student
+          with experience building web applications using Python, Flask, HTML,
+          CSS and JavaScript.
+        </p>
+
+        <p>
+          I am currently developing a Flask-based application designed to
+          support people experiencing the early stages of dementia by helping
+          them remember loved ones through family profiles, photographs,
+          relationship information and recorded voice messages.
+        </p>
+
+        <p>
+          This project combines my interest in software development with my
+          goal of creating practical, accessible technology that can have a
+          positive impact on people’s everyday lives.
+        </p>
+
+      </div>
+
+      <div class="qualities">
+
+        <article class="quality-item">
+
+          <div class="quality-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <h3>Clean Code</h3>
+
+          <p>
+            Writing maintainable, organised and scalable applications.
+          </p>
+
+        </article>
+
+        <article class="quality-item">
+
+          <div class="quality-icon">
+            <i class="fa-solid fa-puzzle-piece"></i>
+          </div>
+
+          <h3>Problem Solver</h3>
+
+          <p>
+            Turning complex problems into practical and reliable solutions.
+          </p>
+
+        </article>
+
+        <article class="quality-item">
+
+          <div class="quality-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h3>Always Learning</h3>
+
+          <p>
+            Exploring new technologies and continuously developing my skills.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section class="section skills-section">
+
+      <div class="section-heading">
+
+        <p class="section-label">Technologies</p>
+
+        <h2>Skills</h2>
+
+        <p class="section-description">
+          Technologies and tools I use across software development,
+          web applications and engineering projects.
+        </p>
+
+      </div>
+
+      <div class="skills-list">
+
+        <div class="skill">
+          <i class="fa-brands fa-html5 html-icon"></i>
+          <span>HTML</span>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-css3-alt css-icon"></i>
+          <span>CSS</span>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-js javascript-icon"></i>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-python python-icon"></i>
+          <span>Python</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-flask-original flask-icon"></i>
+          <span>Flask</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-cplusplus-plain cplusplus-icon"></i>
+          <span>C++</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-flutter-plain flutter-icon"></i>
+          <span>Flutter</span>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-node-js node-icon"></i>
+          <span>Node.js</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-firebase-plain firebase-icon"></i>
+          <span>Firebase</span>
+        </div>
+
+        <div class="skill">
+          <img
+            src="images/solidworks.jpg"
+            alt="SolidWorks logo"
+            class="skill-image"
+          >
+          <span>SolidWorks</span>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-github github-icon"></i>
+          <span>GitHub</span>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-arduino-plain arduino-icon"></i>
+          <span>Arduino</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section projects-section" id="projects">
+
+      <div class="projects-heading">
+
+        <div>
+
+          <p class="section-label">Recent Work</p>
+
+          <h2>Featured Projects</h2>
+
+          <p class="section-description">
+            A selection of software and engineering projects I have worked on.
+          </p>
+
+        </div>
+
+        <a
+          href="https://github.com/sy1122young"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="view-all-link"
+        >
+          View GitHub
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+
+          <div class="project-information">
+
+            <p class="project-type">
+              Web Application
+            </p>
+
+            <h3>Daily Faces</h3>
+
+            <p class="project-description">
+              A cognitive web application designed to support people
+              experiencing early-stage dementia by helping them remember loved
+              ones through family profiles, photographs, voice recordings and
+              interactive activities.
+            </p>
+
+            <div class="project-tags">
+              <span>Flask</span>
+              <span>Firebase</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="apidev.png" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                       
-                  <div class="card__header-text">
-                    <h3 class="card__title">API Development</h3>                  
-                  </div>
-                </div>
-                <div class="card__description">                 
-                <ul>
-                  <li><a href="url">Flask API - currently being added</a></li>
-                    <li><a href="url"> Node.js API - currently being added</a></li> 
-                </ul>
-                </div>
-              </div>
+
+            <div class="project-links">
+
+              <a
+                href="#"
+                aria-label="View the Daily Faces live demonstration"
+              >
+                <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Live Demo
+              </a> -->
+
+              <a
+                href="#"
+                aria-label="View the Daily Faces source code"
+              >
+                <i class="fa-brands fa-youtube"></i>
+                Youtube
+              </a>
+
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="datadev.png" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                 
-                  <div class="card__header-text">
-                    <h3 class="card__title">Data Structures & Algorithms</h3>
-                  </div>          
-                </div>
-                <div class="card__description">
-                <ul>
-                  <li><a href="data_algo_pages/regex.html">Regex pattern Searcher - Java</a></li>
-                  <li><a href="data_algo_pages/kmp.html"> KMP data compression algorith - Java </a></li> 
-                </ul>
-                </div>
-              </div>
+
+          </div>
+
+          <div class="project-image">
+
+            <img
+              src="images/dailyfaces.png"
+              alt="Daily Faces web application preview"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- Project 2 -->
+        <article class="project-card">
+
+          <div class="project-information">
+
+            <p class="project-type">
+              University Project
+            </p>
+
+            <h3>Music Library</h3>
+
+            <p class="project-description">
+              A full-stack web application developed as part of a three-person team using PHP, JavaScript, HTML and XML. PHP was used for server-side logic and data processing, JavaScript added interactive functionality, and XML was used to organise and exchange structured data. The project also involved collaboration, task coordination and integrating code developed by multiple team members.
+            </p>
+
+            <div class="project-tags">
+              <span>PHP</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>Boot Stap Library</span>
             </div>
-          </li>    
+
+            <div class="project-links">
+
+
+              <a
+                href="https://github.com/sy1122young/musicsite"
+                aria-label="View the autonomous robot source code"
+              >
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-image">
+
+            <img
+              src="images/song.png"
+              alt="song website preview"
+            >
+
+          </div>
+
+        </article>
+         <!-- Project 3 -->
+        <article class="project-card">
+
+          <div class="project-information">
+
+            <p class="project-type">
+              University Project
+            </p>
+
+            <h3>Regex Pattern Searcher</h3>
+
+            <p class="project-description">
+              This Java-based Regex Pattern Searcher is a tool designed to efficiently locate and extract specific patterns within textual data using regular expressions. The program allows users to define custom regex patterns, making it versatile for applications like text parsing, validation, and data extraction.
+            </p>
+
+            <div class="project-tags">
+              <span>Java</span>
+            </div>
+
+            <div class="project-links">
+
+
+              <a
+                href="https://github.com/sy1122young/patternSearch"
+                aria-label="View the autonomous robot source code"
+              >
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-image">
+            
+            <img
+              src="images/regex_pattern_searcher.jpg"
+              alt="regex"
+            >
           
-        </ul>
-        
+
+          </div>
+
+        </article>
+        <!-- Project 4 -->
+        <article class="project-card">
+
+          <div class="project-information">
+
+            <p class="project-type">
+              University Project
+            </p>
+
+            <h3>KMP Data Compression</h3>
+
+            <p class="project-description">
+              The KMP (Knuth-Morris-Pratt) Data Compression Algorithm is a novel approach to data compression, leveraging the principles of pattern matching and efficient string searching. Inspired by the KMP algorithm's ability to detect repeating patterns without redundant computations, this compression technique optimally identifies and encodes repetitive sequences in data, reducing storage requirements while maintaining data integrity. This algorithm is particularly effective for datasets with recurring substrings, offering a blend of speed and high compression ratios.
+            </p>
+
+            <div class="project-tags">
+              <span>Java</span>
+            </div>
+
+            <div class="project-links">
+
+
+              <a
+                href="https://github.com/sy1122young/KMPDataCompression"
+                aria-label="View the autonomous robot source code"
+              >
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-image">
+            <img
+              src="images/kmp.png"
+              alt="regex"
+            >
+            
+
+          </div>
+
+        </article>
+
+      </div>
+
     </section>
 
-    
-</body>
 
+    <!-- Contact -->
+    <section class="section contact-section">
+
+      <div class="contact-card">
+
+        <div>
+
+          <p class="section-label">Contact</p>
+
+          <h2>Let’s Work Together</h2>
+
+          <p>
+            I am interested in software development, IT support, embedded
+            systems and mechatronics opportunities.
+          </p>
+
+        </div>
+
+        <a
+          href="mailto:stephen1122young@hotmail.com"
+          class="primary-button"
+        >
+          <i class="fa-regular fa-envelope"></i>
+          Send Me an Email
+        </a>
+
+      </div>
+
+    </section>
+  </main>
+
+</body>
 </html>
