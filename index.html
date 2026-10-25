@@ -13,7 +13,7 @@
     content="Stephen Young's software development and mechatronics engineering portfolio."
   >
 
-  <title>Stephen Young | Developer Portfolio</title>
+  <title>Stephen Young | Software & Mechatronics Portfolio</title>
 
   <!-- Main stylesheet -->
   <link
@@ -38,80 +38,79 @@
 
   <main class="portfolio-page">
 
-    <!-- Hero -->
-    <section class="hero-section">
+    <!-- Full-screen landing section -->
+    <section class="hero-section" id="home" aria-label="Introduction">
+      <div class="hero-backdrop hero-backdrop-software" aria-hidden="true"></div>
+      <div class="hero-backdrop hero-backdrop-engineering" aria-hidden="true"></div>
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="Stephen Young, back to top">Stephen Young<span class="brand-dot">.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-contact" href="mailto:stephen1122young@hotmail.com">Get in touch <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </header>
 
       <div class="hero-content">
-
         <div class="hero-text">
-
-          <p class="intro-label">Hello, I am</p>
-
-          <h1>
-            Stephen
-            <span>Young</span>
-          </h1>
-
-          <h2>
-            Software Developer &amp; Mechatronics Engineering Student
-          </h2>
-
-          <p class="hero-description">
-            I hold a Bachelor’s degree in Computer Science and am currently
-            completing my second year of Mechatronics Engineering at the
-            University of Technology Sydney.
-          </p>
-
-          <div class="hero-buttons">
-
-            <a href="#projects" class="primary-button">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              View My Projects
-            </a>
-
-            <a
-              href="mailto:stephen1122young@hotmail.com"
-              class="secondary-button"
-            >
-              <i class="fa-regular fa-envelope"></i>
-              Contact Me
-            </a>
-
+          <p class="intro-label"><span class="status-dot"></span> BUILDING AT THE INTERSECTION OF SOFTWARE &amp; ENGINEERING</p>
+          <h1>Stephen Young<span>.</span></h1>
+          <div class="hero-copy">
+            <h2 data-hero-title>Software Developer <span class="hero-divider">/</span> Mechanical &amp; Mechatronics Engineering Student</h2>
+            <p class="hero-description" data-hero-description>I hold a Bachelor’s degree in Computer Science and am entering my third year of Mechanical and Mechatronics Engineering at the University of Technology Sydney. 
+              I am passionate about combining software development, mechanical design and hands-on engineering to develop practical solutions to real-world problems.</p>
           </div>
-
+          <div class="hero-buttons">
+            <a href="#projects" class="primary-button">Explore projects <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+            <a href="mailto:stephen1122young@hotmail.com" class="secondary-button">Contact me <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
         </div>
 
-        <!-- <div class="profile-area">
-
-          <div class="profile-glow"></div>
-
-          <div class="profile-frame">
-            <img
-              src="images/profilepicture.jpg"
-              alt="Stephen Young"
-            >
+        <div class="hero-bottom">
+          <div class="hero-switch-wrap">
+            <p class="switch-caption">SELECT A DISCIPLINE</p>
+            <div class="discipline-switch" role="group" aria-label="Portfolio discipline">
+              <button type="button" class="discipline-option active" data-discipline="software" aria-pressed="true">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <span><strong>Software Development</strong><small>Applications, systems &amp; code</small></span>
+              </button>
+              <button type="button" class="discipline-option" data-discipline="engineering" aria-pressed="false">
+                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                <span><strong>Mechanical &amp; Mechatronics</strong><small>CAD, robotics &amp; embedded systems</small></span>
+              </button>
+            </div>
           </div>
-
-        </div> -->
-
+          <div class="hero-values">
+            <div><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span><strong>Practical solutions</strong><small>From concept to working systems</small></span></div>
+            <div><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span><strong>Cross-disciplinary</strong><small>Bridging software and hardware</small></span></div>
+            <div><i class="fa-solid fa-chart-column" aria-hidden="true"></i><span><strong>Always improving</strong><small>Learning through building</small></span></div>
+          </div>
+          <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+        </div>
       </div>
-
     </section>
 
-
     <!-- About -->
-    <section class="section about-section">
+    <section class="section about-section" id="about">
 
       <div class="about-introduction">
 
-        <p class="section-label">About</p>
+        <p class="section-label">
+          About
+        </p>
 
-        <h2>About Me</h2>
+        <h2>
+          About Me
+        </h2>
 
         <p>
-          I am a Computer Science graduate and Mechatronics Engineering student
-          with experience building web applications using Python, Flask, HTML,
-          CSS and JavaScript.
+          I am a Computer Science graduate and Mechatronics Engineering
+          student with experience building web applications using Python,
+          Flask, HTML, CSS and JavaScript.
         </p>
 
         <p>
@@ -131,13 +130,15 @@
 
       <div class="qualities">
 
-        <article class="quality-item">
+        <article class="quality-item" data-quality-card="0">
 
           <div class="quality-icon">
             <i class="fa-solid fa-code"></i>
           </div>
 
-          <h3>Clean Code</h3>
+          <h3>
+            Clean Code
+          </h3>
 
           <p>
             Writing maintainable, organised and scalable applications.
@@ -145,13 +146,15 @@
 
         </article>
 
-        <article class="quality-item">
+        <article class="quality-item" data-quality-card="1">
 
           <div class="quality-icon">
             <i class="fa-solid fa-puzzle-piece"></i>
           </div>
 
-          <h3>Problem Solver</h3>
+          <h3>
+            Problem Solver
+          </h3>
 
           <p>
             Turning complex problems into practical and reliable solutions.
@@ -159,13 +162,15 @@
 
         </article>
 
-        <article class="quality-item">
+        <article class="quality-item" data-quality-card="2">
 
           <div class="quality-icon">
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
 
-          <h3>Always Learning</h3>
+          <h3>
+            Always Learning
+          </h3>
 
           <p>
             Exploring new technologies and continuously developing my skills.
@@ -179,13 +184,17 @@
 
 
     <!-- Skills -->
-    <section class="section skills-section">
+    <section class="section skills-section" id="skills">
 
       <div class="section-heading">
 
-        <p class="section-label">Technologies</p>
+        <p class="section-label">
+          Technologies
+        </p>
 
-        <h2>Skills</h2>
+        <h2>
+          Skills
+        </h2>
 
         <p class="section-description">
           Technologies and tools I use across software development,
@@ -196,68 +205,121 @@
 
       <div class="skills-list">
 
-        <div class="skill">
+        <div class="skill" data-skill-group="software">
           <i class="fa-brands fa-html5 html-icon"></i>
           <span>HTML</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="software">
           <i class="fa-brands fa-css3-alt css-icon"></i>
           <span>CSS</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="software">
           <i class="fa-brands fa-js javascript-icon"></i>
           <span>JavaScript</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="both">
           <i class="fa-brands fa-python python-icon"></i>
           <span>Python</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="software">
           <i class="devicon-flask-original flask-icon"></i>
           <span>Flask</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="both">
           <i class="devicon-cplusplus-plain cplusplus-icon"></i>
           <span>C++</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="software">
           <i class="devicon-flutter-plain flutter-icon"></i>
           <span>Flutter</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="software">
           <i class="fa-brands fa-node-js node-icon"></i>
           <span>Node.js</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="software">
           <i class="devicon-firebase-plain firebase-icon"></i>
           <span>Firebase</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="engineering">
+
           <img
             src="images/solidworks.jpg"
             alt="SolidWorks logo"
             class="skill-image"
           >
+
           <span>SolidWorks</span>
+
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="both">
           <i class="fa-brands fa-github github-icon"></i>
           <span>GitHub</span>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-skill-group="engineering">
           <i class="devicon-arduino-plain arduino-icon"></i>
           <span>Arduino</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-microchip engineering-skill-icon" aria-hidden="true"></i>
+          <span>STM32 Microcontrollers</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-memory engineering-skill-icon" aria-hidden="true"></i>
+          <span>NUCLEO-G071RB</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-code engineering-skill-icon" aria-hidden="true"></i>
+          <span>STM32CubeIDE</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-robot engineering-skill-icon" aria-hidden="true"></i>
+          <span>ROS / ROSLibPy</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-camera engineering-skill-icon" aria-hidden="true"></i>
+          <span>OpenCV & ArUco</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-arrows-spin engineering-skill-icon" aria-hidden="true"></i>
+          <span>Robot Kinematics</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-wave-square engineering-skill-icon" aria-hidden="true"></i>
+          <span>PWM & ADC</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-drafting-compass engineering-skill-icon" aria-hidden="true"></i>
+          <span>Engineering Drawings</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-layer-group engineering-skill-icon" aria-hidden="true"></i>
+          <span>CAD Assemblies</span>
+        </div>
+
+        <div class="skill" data-skill-group="engineering">
+          <i class="fa-solid fa-screwdriver-wrench engineering-skill-icon" aria-hidden="true"></i>
+          <span>Prototyping & Fabrication</span>
         </div>
 
       </div>
@@ -266,15 +328,22 @@
 
 
     <!-- Projects -->
-    <section class="section projects-section" id="projects">
+    <section
+      class="section projects-section"
+      id="projects"
+    >
 
       <div class="projects-heading">
 
         <div>
 
-          <p class="section-label">Recent Work</p>
+          <p class="section-label">
+            Recent Work
+          </p>
 
-          <h2>Featured Projects</h2>
+          <h2>
+            Featured Projects
+          </h2>
 
           <p class="section-description">
             A selection of software and engineering projects I have worked on.
@@ -294,10 +363,18 @@
 
       </div>
 
-      <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <article class="project-card">
+      <!-- Software projects -->
+      <div
+        class="projects-grid project-panel"
+        id="software-projects"
+        data-project-panel="software"
+        role="tabpanel"
+        aria-label="Software development projects"
+      >
+
+        <!-- Software Project 1 -->
+        <article class="project-card project-category-card">
 
           <div class="project-information">
 
@@ -305,7 +382,9 @@
               Web Application
             </p>
 
-            <h3>Daily Faces</h3>
+            <h3>
+              Daily Faces
+            </h3>
 
             <p class="project-description">
               A cognitive web application designed to support people
@@ -325,19 +404,13 @@
             <div class="project-links">
 
               <a
-                href="#"
-                aria-label="View the Daily Faces live demonstration"
-              >
-                <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                Live Demo
-              </a> -->
-
-              <a
                 href="https://youtu.be/P8e12iVgU0g"
-                aria-label="View the Daily Faces source code"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch the Daily Faces project on YouTube"
               >
                 <i class="fa-brands fa-youtube"></i>
-                Youtube
+                YouTube
               </a>
 
             </div>
@@ -356,8 +429,8 @@
         </article>
 
 
-        <!-- Project 2 -->
-        <article class="project-card">
+        <!-- Software Project 2 -->
+        <article class="project-card project-category-card">
 
           <div class="project-information">
 
@@ -365,10 +438,18 @@
               University Project
             </p>
 
-            <h3>Music Library</h3>
+            <h3>
+              Music Library
+            </h3>
 
             <p class="project-description">
-              A full-stack web application developed as part of a three-person team using PHP, JavaScript, HTML and XML. PHP was used for server-side logic and data processing, JavaScript added interactive functionality, and XML was used to organise and exchange structured data. The project also involved collaboration, task coordination and integrating code developed by multiple team members.
+              A full-stack web application developed as part of a three-person
+              team using PHP, JavaScript, HTML and XML. PHP was used for
+              server-side logic and data processing, JavaScript added
+              interactive functionality, and XML was used to organise and
+              exchange structured data. The project also involved
+              collaboration, task coordination and integrating code developed
+              by multiple team members.
             </p>
 
             <div class="project-tags">
@@ -376,15 +457,17 @@
               <span>CSS</span>
               <span>JavaScript</span>
               <span>HTML</span>
-              <span>Boot Stap Library</span>
+              <span>XML</span>
+              <span>Bootstrap</span>
             </div>
 
             <div class="project-links">
 
-
               <a
                 href="https://github.com/sy1122young/musicsite"
-                aria-label="View the autonomous robot source code"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View the Music Library source code on GitHub"
               >
                 <i class="fa-brands fa-github"></i>
                 GitHub
@@ -398,14 +481,16 @@
 
             <img
               src="images/song.png"
-              alt="song website preview"
+              alt="Music Library website preview"
             >
 
           </div>
 
         </article>
-         <!-- Project 3 -->
-        <article class="project-card">
+
+
+        <!-- Software Project 3 -->
+        <article class="project-card project-category-card">
 
           <div class="project-information">
 
@@ -413,22 +498,30 @@
               University Project
             </p>
 
-            <h3>Regex Pattern Searcher</h3>
+            <h3>
+              Regex Pattern Searcher
+            </h3>
 
             <p class="project-description">
-              This Java-based Regex Pattern Searcher is a tool designed to efficiently locate and extract specific patterns within textual data using regular expressions. The program allows users to define custom regex patterns, making it versatile for applications like text parsing, validation, and data extraction.
+              A Java-based tool designed to locate and extract patterns from
+              textual data using regular expressions. The program allows users
+              to define custom patterns for tasks such as text parsing,
+              validation and data extraction.
             </p>
 
             <div class="project-tags">
               <span>Java</span>
+              <span>Regular Expressions</span>
+              <span>Data Processing</span>
             </div>
 
             <div class="project-links">
-
 
               <a
                 href="https://github.com/sy1122young/patternSearch"
-                aria-label="View the autonomous robot source code"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View the Regex Pattern Searcher source code on GitHub"
               >
                 <i class="fa-brands fa-github"></i>
                 GitHub
@@ -439,18 +532,19 @@
           </div>
 
           <div class="project-image">
-            
+
             <img
               src="images/regex_pattern_searcher.jpg"
-              alt="regex"
+              alt="Regex Pattern Searcher project preview"
             >
-          
 
           </div>
 
         </article>
-        <!-- Project 4 -->
-        <article class="project-card">
+
+
+        <!-- Software Project 4 -->
+        <article class="project-card project-category-card">
 
           <div class="project-information">
 
@@ -458,22 +552,31 @@
               University Project
             </p>
 
-            <h3>KMP Data Compression</h3>
+            <h3>
+              KMP Data Compression
+            </h3>
 
             <p class="project-description">
-              The KMP (Knuth-Morris-Pratt) Data Compression Algorithm is a novel approach to data compression, leveraging the principles of pattern matching and efficient string searching. Inspired by the KMP algorithm's ability to detect repeating patterns without redundant computations, this compression technique optimally identifies and encodes repetitive sequences in data, reducing storage requirements while maintaining data integrity. This algorithm is particularly effective for datasets with recurring substrings, offering a blend of speed and high compression ratios.
+              A Java-based data compression project that applies concepts from
+              the Knuth-Morris-Pratt pattern-matching algorithm to identify
+              recurring sequences in data. The project focused on efficient
+              string searching, pattern detection and reducing repeated data.
             </p>
 
             <div class="project-tags">
               <span>Java</span>
+              <span>Algorithms</span>
+              <span>Data Compression</span>
+              <span>Pattern Matching</span>
             </div>
 
             <div class="project-links">
 
-
               <a
                 href="https://github.com/sy1122young/KMPDataCompression"
-                aria-label="View the autonomous robot source code"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View the KMP Data Compression source code on GitHub"
               >
                 <i class="fa-brands fa-github"></i>
                 GitHub
@@ -484,11 +587,134 @@
           </div>
 
           <div class="project-image">
+
             <img
               src="images/kmp.png"
-              alt="regex"
+              alt="KMP Data Compression project preview"
             >
-            
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- Engineering projects -->
+      <div
+        class="projects-grid project-panel project-hidden"
+        id="engineering-projects"
+        data-project-panel="engineering"
+        role="tabpanel"
+        aria-label="Mechanical and mechatronics projects"
+        hidden
+      >
+
+        <!-- Engineering Project 1 -->
+        <!-- <article class="project-card project-category-card">
+
+          <div class="project-information">
+
+            <p class="project-type">
+              Design and Build Project
+            </p>
+
+            <h3>
+              Autonomous Collection Robot
+            </h3>
+
+            <p class="project-description">
+              Designed and built a mechatronics robot capable of collecting
+              and transporting objects. The robot used an Arduino-controlled
+              mechanical scoop with a rack-and-pinion system, stepper motor and
+              servo-operated mechanisms.
+            </p>
+
+            <div class="project-tags">
+              <span>SolidWorks</span>
+              <span>Arduino</span>
+              <span>C++</span>
+              <span>Stepper Motor</span>
+              <span>Servo Motors</span>
+              <span>CAD</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="#"
+                aria-label="View the Autonomous Collection Robot project"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                View Project
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-image">
+
+            <img
+              src="images/autonomous_robot.jpg"
+              alt="Autonomous collection robot"
+            >
+
+          </div>
+
+        </article> -->
+
+
+        <!-- Engineering Project 2 -->
+        <article class="project-card project-category-card">
+
+          <div class="project-information">
+
+            <p class="project-type">
+              Arduino Project
+            </p>
+
+            <h3>
+              Arcade Fishing Game
+            </h3>
+
+            <p class="project-description">
+              Built an interactive fishing game using an Arduino, joystick,
+              stepper motor and servo motor. The joystick controlled the
+              movement of the fishing rod while the stepper motor operated the
+              reel, allowing the player to collect magnetic fish in an
+              arcade-style challenge.
+            </p>
+
+            <div class="project-tags">
+              <span>Arduino</span>
+              <span>C++</span>
+              <span>Stepper Motor</span>
+              <span>Servo Motor</span>
+              <span>Joystick</span>
+              <span>Prototyping</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="#"
+                aria-label="View the Arcade Fishing Game project"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                View Project
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-image">
+
+            <img
+              src="images/fishing_game.png"
+              alt="Arduino arcade fishing game"
+            >
 
           </div>
 
@@ -499,16 +725,34 @@
     </section>
 
 
+    <!-- Experience -->
+    <section class="section experience-section" id="experience">
+      <div class="section-heading">
+        <p class="section-label">Background</p>
+        <h2>Experience &amp; Education</h2>
+        <p class="section-description">A background in computer science, professional IT support and hands-on engineering.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-item"><span class="experience-kicker">EDUCATION</span><h3>Mechanical & Mechatronics Engineering</h3><p>University of Technology Sydney</p><small>Bachelor's degree — currently studying</small></article>
+        <article class="experience-item"><span class="experience-kicker">EDUCATION</span><h3>Computer Science</h3><p>University of Waikato</p><small>Bachelor's degree — completed 2023</small></article>
+        <article class="experience-item"><span class="experience-kicker">INDUSTRY EXPERIENCE</span><h3>IT Engineering &amp; Support</h3><p>I-MED Radiology · New Era Technology · Green Mouse Computing</p><small>Systems, troubleshooting, deployment and technical support</small></article>
+      </div>
+    </section>
+
     <!-- Contact -->
-    <section class="section contact-section">
+    <section class="section contact-section" id="contact">
 
       <div class="contact-card">
 
         <div>
 
-          <p class="section-label">Contact</p>
+          <p class="section-label">
+            Contact
+          </p>
 
-          <h2>Let’s Work Together</h2>
+          <h2>
+            Let’s Work Together
+          </h2>
 
           <p>
             I am interested in software development, IT support, embedded
@@ -528,7 +772,65 @@
       </div>
 
     </section>
+
   </main>
+
+
+  <script>
+    (() => {
+      const options = [...document.querySelectorAll('[data-discipline]')];
+      const panels = [...document.querySelectorAll('[data-project-panel]')];
+      const skills = [...document.querySelectorAll('[data-skill-group]')];
+      function setDiscipline(mode) {
+        if (!["software", "engineering"].includes(mode)) return;
+        document.body.dataset.activeDiscipline = mode;
+        options.forEach(btn => {
+          const active = btn.dataset.discipline === mode;
+          btn.classList.toggle('active', active);
+          btn.setAttribute('aria-pressed', String(active));
+        });
+        panels.forEach(panel => {
+          const show = panel.dataset.projectPanel === mode;
+          panel.hidden = !show;
+          panel.classList.toggle('project-hidden', !show);
+          if (show) {
+            panel.querySelectorAll('.project-category-card').forEach(card => {
+              card.classList.remove('project-visible');
+              void card.offsetWidth;
+              card.classList.add('project-visible');
+            });
+          }
+        });
+        skills.forEach(skill => { skill.hidden = !['both', mode].includes(skill.dataset.skillGroup); });
+        // Only the three feature tiles change; the About Me copy stays untouched.
+        const qualityContent = {
+          software: [
+            { icon: 'fa-solid fa-code', title: 'Clean Code', description: 'Writing maintainable, organised and scalable applications.' },
+            { icon: 'fa-solid fa-puzzle-piece', title: 'Problem Solver', description: 'Turning complex problems into practical and reliable solutions.' },
+            { icon: 'fa-solid fa-graduation-cap', title: 'Always Learning', description: 'Exploring new technologies and continuously developing my skills.' }
+          ],
+          engineering: [
+            { icon: 'fa-solid fa-drafting-compass', title: 'CAD & Mechanical Design', description: 'Designing components and assemblies in SolidWorks, from 3D models to engineering drawings.' },
+            { icon: 'fa-solid fa-screwdriver-wrench', title: 'Prototyping & Fabrication', description: 'Turning mechanical concepts into working prototypes through practical building, testing and iteration.' },
+            { icon: 'fa-solid fa-robot', title: 'Robotics & Embedded Systems', description: 'Integrating mechanical mechanisms, sensors, motors and microcontrollers into functional systems.' }
+          ]
+        };
+        document.querySelectorAll('[data-quality-card]').forEach((card, index) => {
+          const content = qualityContent[mode][index];
+          if (!content) return;
+          card.querySelector('.quality-icon i').className = content.icon;
+          card.querySelector('h3').textContent = content.title;
+          card.querySelector('p').textContent = content.description;
+          card.classList.remove('quality-refresh');
+          void card.offsetWidth;
+          card.classList.add('quality-refresh');
+        });
+      }
+      options.forEach(btn => btn.addEventListener('click', () => setDiscipline(btn.dataset.discipline)));
+      // Software is intentionally the default on every page load.
+      setDiscipline('software');
+    })();
+  </script>
 
 </body>
 </html>
